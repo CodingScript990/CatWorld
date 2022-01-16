@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0" />
   <title>Cat World</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
@@ -11,12 +12,12 @@
 <body>
     <div class="container">
       <!-- Section 1 -->
-      <section class="section-1">
+      <section class="section-1" id="home">
         <nav class="navbar">
-          <a href="#" class="navbar-link">Home</a>
-          <a href="#" class="navbar-link">Info</a>
-          <a href="#" class="navbar-link">Gallery</a>
-          <a href="#" class="navbar-link">Contact</a>
+          <a href="#home" class="navbar-link">Home</a>
+          <a href="#info" class="navbar-link">Info</a>
+          <a href="#gallery" class="navbar-link">Gallery</a>
+          <a href="#contact" class="navbar-link">Contact</a>
         </nav>
         <div class="floating-bg"></div>
         <h1 class="section-1-heading">
@@ -32,7 +33,7 @@
 
       <!-- Section 2 -->
 
-      <section class="section-2">
+      <section class="section-2" id="info">
         <h1 class="section-heading">
           Information
         </h1>
@@ -78,7 +79,7 @@
 
       <!-- Section 3 -->
 
-      <section class="section-3">
+      <section class="section-3" id="gallery">
         <h1 class="section-heading">Gallery</h1>
         <div class="gallery-wrapper">
           <div class="gallery-card">
@@ -142,7 +143,7 @@
 
       <!-- Section 4 -->
 
-      <section class="section-4">
+      <section class="section-4" id="contact">
         <h1 class="section-heading">Contact</h1>
         <div class="form-container">
           <img src="image/cat4.png" class="form-img">
@@ -155,11 +156,15 @@
           </form>
         </div>
         <p class="copyright">
-          Copyrgin &copy; CodeAndCreate All Rights Reserved
+          Copyright &copy; 2022 CodingScript990 All Rights Reserved.
         </p>
       </section>
 
       <!-- End of Section 4 -->
+
+      <a href="#home" class="scroll-up-btn">
+        <i class="fas fa-arrow-up"></i>
+      </a>
     </div>
 </body>
 </html>

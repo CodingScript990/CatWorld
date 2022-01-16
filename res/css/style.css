@@ -14,6 +14,7 @@
 @import url('animation.css');
 
 
+
 * {
   margin: 0;
   padding: 0;
@@ -23,11 +24,11 @@
   outline: none;
   font-family: 'Rubik Mono One', sans-serif;
   font-weight: 400;
-  scroll-behavior: smooth;
 }
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -42,6 +43,8 @@ html {
   width: 100%;
   height: 100vh;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
@@ -118,9 +121,9 @@ html {
   padding: .8rem 1.6rem;
   border-radius: .8rem;
   position: absolute;
-  top: 18vw;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   color: #363333f6;
   text-shadow: .3rem .3rem .3rem #5c5a5b;
   text-align: center;
@@ -187,24 +190,24 @@ html {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .info-wrapper {
-  height: 80%;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
 }
 
 .info {
   width: 35rem;
   height: 50rem;
+  margin: 0 3rem;
   background: #cac9c9;
   color: #3b3939;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   border-radius: .5rem;
   padding: 2rem;
   box-shadow: 1rem 1rem 1.125rem #b6b1b1,
@@ -213,18 +216,11 @@ html {
   position: relative;
 }
 
-.info:first-child {
-  align-self: flex-end;
-}
-
-.info:last-child {
-  align-self: flex-start;
-}
 
 .info:hover {
   box-shadow: 1rem 1rem 2.5rem #aaaaaa,
   -1rem -1rem 2.5rem #cccaca;
-  margin-top: -4rem;
+  margin-top: -5rem;
   transition: margin-top .5s;
 }
 
@@ -317,13 +313,15 @@ html {
 
 .gallery-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  height: 73.5%;
+  margin-top: 3rem;
 }
 
 .gallery-card {
-  width: 35rem;
+  width: 32.5rem;
+  margin: 0 3rem;
   background-color: #ffffff;
   padding: 1rem 1rem 2rem 1rem;
   box-shadow: 1rem 1rem 2rem #ddd,
@@ -471,11 +469,12 @@ html {
 
 .section-4 {
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 
 .form-container {
@@ -543,4 +542,35 @@ html {
   transition: background-color .5s;
 }
 
+.copyright {
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+  color: #444;
+  margin: 3rem;
+}
+
 /* End of Section 4 */
+
+/* Button Up */
+
+.scroll-up-btn {
+  width: 5rem;
+  height: 5rem;
+  background-color: #424141ee;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  color: #ffffff;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color .5s;
+}
+
+.scroll-up-btn:hover { 
+  background-color: #2e2c2cfa;
+}
+
+/* End of Button Up */
